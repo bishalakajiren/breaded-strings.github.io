@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> BREADED STRINGS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="home.html"><img src="logo.jpg" class="log"> </a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>only crafting<br><span> we do</span></h2>
+                <div class="para">
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                    </p>
+                </div>
+                <a href="#">view all products</a>
+            </div>
+            <div class="imgBox">
+                <img src="ff.jpg" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="h.jpg" onclick="imgSlider('h.jpg'); changeBgColor('#F0E68C')"></li>
+            <li><img src="78.jpg" onclick="imgSlider('78.jpg'); changeBgColor('#0000CD')"></li>
+            <li><img src="56.jpg" onclick="imgSlider('56.jpg'); changeBgColor('#228B22')"></li>
+            <li><img src=" fb.jpg" onclick="imgSlider('fb.jpg'); changeBgColor('#FFC0CB')"></li>
+        </ul>
+        <ul class=" sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="insta.png"></a></li>
+        </ul>
+    </section>
+    <section class="white-section" id="features">
+        <div class="container-fluid">
+            <div class="circle">
+                <h2>crafted strings</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#"><img src="h.jpg"> </a>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
